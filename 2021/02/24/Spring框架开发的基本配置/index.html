@@ -124,7 +124,7 @@
 
 
 <h2 id="15-Spring练习-用户添加操作-添加页面展示-应用"><a href="#15-Spring练习-用户添加操作-添加页面展示-应用" class="headerlink" title="15-Spring练习-用户添加操作-添加页面展示(应用)"></a>15-Spring练习-用户添加操作-添加页面展示(应用)</h2><p>需求：添加用户，需求图如下：</p>
-<p><img src="%5Cimg%5C5.png"></p>
+<p><img src="img/5.png"></p>
 <p>新建用户时，点击新建按钮先去到添加用户的页面user-add.jsp,在添加用户页面需要展示可供选择的角色信息，因此来到添加页面时需要查询所有的角色信息并展示</p>
 <p>去到user-add.jsp页面时先查询所有角色信息的controller代码</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/saveUI&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">saveUI</span><span class="params">()</span></span>&#123;</span><br><span class="line">        ModelAndView modelAndView = <span class="keyword">new</span> ModelAndView();</span><br><span class="line">        List&lt;Role&gt; roleList = roleService.list();</span><br><span class="line">        modelAndView.addObject(<span class="string">&quot;roleList&quot;</span>,roleList);</span><br><span class="line">        modelAndView.setViewName(<span class="string">&quot;user-add&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> modelAndView;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
@@ -152,7 +152,7 @@
 
 
 <h2 id="18-Spring练习-删除用户操作-应用"><a href="#18-Spring练习-删除用户操作-应用" class="headerlink" title="18-Spring练习-删除用户操作(应用)"></a>18-Spring练习-删除用户操作(应用)</h2><p>删除用户功能的需求如图所示:</p>
-<p><img src="%5Cimg%5C6.png"></p>
+<p><img src="img/6.png"></p>
 <p>操作步骤如下：</p>
 <p>①点击用户列表的删除按钮，发送请求到服务器端</p>
 <p>②编写UserController的del()方法</p>
