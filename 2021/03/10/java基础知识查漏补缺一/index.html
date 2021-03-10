@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="hlohlo"><title>java基础知识查漏补缺一 · hlohlo-Blog</title><meta name="description" content="java开发环境
+
+java开发环境的搭建
+下载安装jdk
+
+配置环境变量
+1）JAVA_HOME:jdk的安装路径
+2）path:jdk下bin文件夹的路径（建议在path值的最前面添加jdk下的bin的目录即可）
+3）classpath:值的最前边加**”.”**
+
+
+
+jdk、jre、jvm的"><meta name="keywords" content="hlohlo博客,HoloBlog,博客,HOLO"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">hlohlo-Blog</a></h3><div class="description"><p>所得皆所期，所失亦无碍。<br> The gains are expected, and the losses are okay</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/CnzOOOo"><i class="fa fa-github"></i></a></li><li><a href="mailto:CnzOOOo@163.com"><i class="fa fa-envelope"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY="><i class="fa fa-qq"></i></a></li><li><a target="_blank" rel="noopener" href="https://www.zhihu.com/people/cnzni-zi"><i class="fa fa-mortar-board"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2020 - 2021 </span><i class="fa fa-star"></i><span> hlohlo</span></div><div class="by_farbox"><span>Powered by </span><a href="https://www.hlohlo.xyz" target="_blank">Hexo </a><span> & </span><a href="https://www.hlohlo.xyz" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="https://www.hlohlo.xyz" target="_blank">hlohlo</a><span style="height:10px;margin-left: 10px;">|</span><img src="/images/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;">暂无备案</span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>java基础知识查漏补缺一</a></h3></div><div class="post-content"><h4 id="java开发环境"><a href="#java开发环境" class="headerlink" title="java开发环境"></a>java开发环境</h4><blockquote>
+<ol>
+<li><h5 id="java开发环境的搭建"><a href="#java开发环境的搭建" class="headerlink" title="java开发环境的搭建"></a>java开发环境的搭建</h5><ol>
+<li><p>下载安装jdk</p>
+</li>
+<li><p>配置环境变量</p>
+<p>1）JAVA_HOME:jdk的安装路径</p>
+<p>2）path:jdk下bin文件夹的路径（建议在path值的最前面添加jdk下的bin的目录即可）</p>
+<p>3）classpath:值的最前边加**”.”**</p>
+</li>
+</ol>
+</li>
+<li><h6 id="jdk、jre、jvm的关系与区别"><a href="#jdk、jre、jvm的关系与区别" class="headerlink" title="jdk、jre、jvm的关系与区别"></a>jdk、jre、jvm的关系与区别</h6><ol>
+<li>jvm:java虚拟机</li>
+<li>jre:java运行环境，jre=jvm+java系统类库</li>
+<li>jdk:java开发环境，jre+开发工具包（编译、运行工具等）</li>
+</ol>
+</li>
+<li><h6 id="java程序的运行机制"><a href="#java程序的运行机制" class="headerlink" title="java程序的运行机制"></a>java程序的运行机制</h6><ol>
+<li><p>先编译后运行</p>
+<p>1）先编译：.java源文件编译成.class字节码文件</p>
+<p>2）后运行：加载并执行.class字节码文件</p>
+</li>
+</ol>
+</li>
+<li><h6 id="Eclipse中如何开发应用程序"><a href="#Eclipse中如何开发应用程序" class="headerlink" title="Eclipse中如何开发应用程序"></a>Eclipse中如何开发应用程序</h6><ol>
+<li><p>eclipse中写好程序后保存，.java源文件就已经编译好了，产生了对应的.class文件</p>
+</li>
+<li><p>创建项目：所有字母小写</p>
+<p>​    1）包：域名反写.功能  baidu.com.util —- 通用的命名规则</p>
+<p>​    2）类：首字母大写，如果类名由多个单词组成，每个单词的首字母大写</p>
+</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><blockquote>
+<ol>
+<li><h6 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h6><ol>
+<li><p>数据类型+变量名； 如：int a;</p>
+</li>
+<li><p>变量的命名规则：5点</p>
+<p>​    1）由字母、数字，_，$ 组成，数字不能开头</p>
+<p>​    2）严格区分大小写</p>
+<p>​    3）不可以使用java关键字/保留字</p>
+<p>​          保留字：java中现在没有使用但是将来可能会用的一些英文单词，java占用了（保留）</p>
+<p>​                const：常量</p>
+<p>​                goto:     跳转</p>
+<p>​          字面量：null，true，false</p>
+<p>​    4）遵循驼峰命名法，见名知意</p>
+<p>​    5）中文可以使用，但是不建议使用</p>
+</li>
+<li><p>若多个变量的数据类型相同，此时可以这样声明：</p>
+<p>int a,b,c=0,d=9; —-正确的    </p>
+</li>
+</ol>
+</li>
+<li><h6 id="变量的初始化：第一次赋值"><a href="#变量的初始化：第一次赋值" class="headerlink" title="变量的初始化：第一次赋值"></a>变量的初始化：第一次赋值</h6><ol>
+<li><p>在声明的同时初始化</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">K</span></span>&#123;</span><br><span class="line">	main:</span><br><span class="line">		<span class="keyword">int</span> x = <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先声明，后初始化 —-一个变量若没有初始化直接使用，编译错误</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">K</span></span>&#123;</span><br><span class="line">	main:</span><br><span class="line">		<span class="keyword">int</span> a;</span><br><span class="line">    	a= <span class="number">10</span>;<span class="comment">//初始化</span></span><br><span class="line">		<span class="keyword">int</span> c = a;<span class="comment">//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><h6 id="变量的访问"><a href="#变量的访问" class="headerlink" title="变量的访问"></a>变量的访问</h6><ol>
+<li><p>给变量赋值 —-存值</p>
+</li>
+<li><p>取值 —-取变量中的那个数</p>
+<p>成员变量和局部变量：</p>
+<p>​    成员变量：定义在类的里边，方法的外边 —- 在类中任何位置都可以使用</p>
+<p>​    局部变量：定义在方法的内部 —- 只能在本方法使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">K</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a; <span class="comment">//成员变量 ----供类中的所有成员共享</span></span><br><span class="line"></span><br><span class="line">    test():&#123;</span><br><span class="line">        <span class="keyword">int</span> b;<span class="comment">//局部变量</span></span><br><span class="line">        <span class="comment">//方法内部可以访问到a;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><blockquote>
+<h6 id="java中有8中基本数据类型"><a href="#java中有8中基本数据类型" class="headerlink" title="java中有8中基本数据类型"></a>java中有8中基本数据类型</h6><p>整型类型(4)：byte、short、int、long </p>
+<p>浮点类型(2)：float、double</p>
+<p>字符类型(1)：char</p>
+<p>布尔类型(1)：boolean</p>
+<h6 id="每种数据类型在计算机中都是以二进制保存的-010100"><a href="#每种数据类型在计算机中都是以二进制保存的-010100" class="headerlink" title="每种数据类型在计算机中都是以二进制保存的 010100"></a>每种数据类型在计算机中都是以二进制保存的 010100</h6><h6 id="每种类型占用的内存大小："><a href="#每种类型占用的内存大小：" class="headerlink" title="每种类型占用的内存大小："></a>每种类型占用的内存大小：</h6><table>
+<thead>
+<tr>
+<th align="left">类型</th>
+<th>占用内存大小</th>
+<th>取值范围（考虑数据溢出）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">byte</td>
+<td>1字节</td>
+<td>-128~127</td>
+</tr>
+<tr>
+<td align="left">short</td>
+<td>2字节</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">int</td>
+<td>4字节</td>
+<td>-21亿多~21亿多</td>
+</tr>
+<tr>
+<td align="left">long</td>
+<td>8字节</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">float</td>
+<td>4字节</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">double</td>
+<td>8字节</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">char</td>
+<td>2字节</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">boolean</td>
+<td>1字节</td>
+<td></td>
+</tr>
+</tbody></table>
+<h6 id="java中程序错误分成2种"><a href="#java中程序错误分成2种" class="headerlink" title="java中程序错误分成2种"></a>java中程序错误分成2种</h6><p>​    编译错误：写代码过程中编译不通过</p>
+<p>​    运行错误：编译通过了，但是运行出错了</p>
+<h6 id="整数类型："><a href="#整数类型：" class="headerlink" title="整数类型："></a>整数类型：</h6><p>byte: -128~127</p>
+<p>​    byte b = 128; //编译错误，数据溢出</p>
+<p>short:</p>
+<p>int:</p>
+<ol>
+<li><p>赋值： int a = ? //什么类型的值</p>
+<ol>
+<li>整数直接量 ： eg: 1 5  89  int a = 5;</li>
+<li>8进制的整数：012   用0~7之间的数字来表示所有数字 —- 用的频率较低</li>
+<li>16进制的整数：0x67E  用0~9 a b c d e f —- 用的频率非常高<ol>
+<li>16进制是为了简写2进制出现的</li>
+<li>java程序中若要保存2进制数据，全都是保存的16进制整数</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>运算：</p>
+<ol>
+<li><p>除不尽的情况：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>）eg: <span class="keyword">int</span> a=<span class="number">3</span>,b=<span class="number">5</span>; System.out.println(a/b);<span class="comment">//结果为0</span></span><br><span class="line"><span class="number">2</span>）如果整数之间相除，除不尽，取整，小数部分省略掉</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运算中的数据溢出：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">20</span> <span class="number">0000</span> <span class="number">0000</span> * <span class="number">10</span>;<span class="comment">//数据溢出</span></span><br><span class="line">如果是运算过程中出现的数据溢出，编译不报错，运行也是正确的，不过结果和预期结果是不同的</span><br><span class="line">数据溢出:</span><br><span class="line">	如果是数据溢出，编译直接报错</span><br><span class="line">    如果是运算过程中数据溢出，编译正确，运行也会正常执行，不过结果不准确</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+<p>long:</p>
+<ol>
+<li>赋值： val(变量)值后＋L/l</li>
+<li>System.currentTimeMills():long —- 当前时间距离历元元年(1970.1.1)的时间差(毫秒)</li>
+</ol>
+<h6 id="基本数据类型和引用类型："><a href="#基本数据类型和引用类型：" class="headerlink" title="基本数据类型和引用类型："></a>基本数据类型和引用类型：</h6><p>​    基本数据类型就8种，除了8种之外，出现的其他所有的数据类型都是引用类型</p>
+<p>​    String str = “helloworld”;</p>
+<h6 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h6><ol>
+<li><p>float:</p>
+<p>float f = 3.4F/f;</p>
+</li>
+<li><p>double:双精度浮点数</p>
+<p>double d = 3.4;</p>
+<p>Java中出现的小数默认都是double类型，Java中出现的整数默认都是int类型</p>
+</li>
+</ol>
+<p>问题：单精度和双精度指的是什么？</p>
+<p>​            精度：小数的有效位数（不是指小数点后的数字位，而是指从整数部分开始的有效数字）</p>
+<p>​                eg:  3.1415926  —- 8位有效数字</p>
+<p>​    float: 单精度 –7/8位有效数字</p>
+<p>​    double:双精度 –15/16位有效数字</p>
+<p>​        精度和编译器有关系，不同的编译器精度有可能不相同</p>
+<p>​        计算机底层保存浮点数的时候，保存的是最接近该数的一个小数，不一定四舍五入</p>
+<p>​        记住： float double 有时候不能精确的表示浮点数</p>
+<p>​                    在运算中可能会出现误差，所以double不用于做精确运算，如果要做精确运算，用BigDecimal</p>
+<h6 id="bolean类型：true-false-通常都是基于关系运算符-gt-lt"><a href="#bolean类型：true-false-通常都是基于关系运算符-gt-lt" class="headerlink" title="bolean类型：true false 通常都是基于关系运算符  &gt;  &lt;"></a>bolean类型：true false 通常都是基于关系运算符  &gt;  &lt;</h6><h6 id="字符类型：char-2字节"><a href="#字符类型：char-2字节" class="headerlink" title="字符类型：char  2字节"></a>字符类型：char  2字节</h6><p>  用 ‘ ’ 表示 ，是一个16位整数 在内存中保存的都是整数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c = <span class="string">&#x27;a&#x27;</span>  <span class="comment">//在内存中保存的是97而不是&#x27;a&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>unicode字符集</p>
+<p>​        版本3： 65536个整数 一个整数对应世界上的一个字符</p>
+<p>​        版本8： 10万+整数</p>
+<p>问题： int 类型的数字用字符表示，也在unicode中对应的整数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eg:		<span class="keyword">char</span> c = <span class="string">&#x27;0&#x27;</span>;   <span class="comment">//&#x27;0&#x27;--48</span></span><br></pre></td></tr></table></figure>
+
+<p>字符集发展：</p>
+<p>ASCII码也是字符集：是编程语言最开始时候的字符集 -只能表示英文，数字，符号 1字节表示一个字符</p>
+<p>各国针对自己的国情：产生了各国的字符集：</p>
+<p>​    eg:    中国：GB2312字符集：能表示中文，英文，数字，符号 –2字节表示一个字符</p>
+<p>​             日本也在ASCII码基础上进行了扩展，2字节表示一个字符，其他语言同理</p>
+<p>基于上述情形，在一个文本中若存在多国语言，那么计算机保存时的整数就产生了冲突，即出现了乱码，</p>
+<p>为了解决这个问题，产生了unicode字符集（国际码，万国码）</p>
+<p>unicode字符集中有10万+整数，每个整数表示世界上一个字符，所有国家的字符都有表示的整数</p>
+<p>​    用2个字节表示一个字符</p>
+<p>​    是定长字符集 –永远都是用2个字节表示一个字符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;a&#x27;</span>  --<span class="number">2</span>字节 --浪费空间</span><br><span class="line"><span class="string">&#x27;中&#x27;</span>  --<span class="number">2</span>字节  --中文在内存中实际保存的时候占用的空间会更大的</span><br><span class="line">    产生问题：都用<span class="number">2</span>字节保存英文，中文，实际存在空间浪费（采用了定长编码）</span><br><span class="line">    为了解决问题：</span><br><span class="line">    	优化方案 --保存英文时占用的空间小一些</span><br><span class="line">    	如何优化 --采用变长字符集 --utf-<span class="number">8</span>就是一种变长字符集</span><br></pre></td></tr></table></figure>
+
+<p>给char类型的数据赋值：</p>
+<p>​    char变量赋值：</p>
+<pre><code>    - ‘a’
+    - 整数  12
+    - ‘\u4e00’ -- \u16进制的整数 -- 表示unicode整数值  --16进制数一定是4位，因为一位16进制数表示4位二进制数，4位刚好是16位
+</code></pre>
+</blockquote>
+<h4 id="数据类型转换问题"><a href="#数据类型转换问题" class="headerlink" title="数据类型转换问题"></a>数据类型转换问题</h4><blockquote>
+<h6 id="自动转换（隐式转换）：小转大"><a href="#自动转换（隐式转换）：小转大" class="headerlink" title="自动转换（隐式转换）：小转大"></a>自动转换（隐式转换）：小转大</h6><p>​        - byte short int long float double</p>
+<p>​        - char –&gt;int</p>
+<p>​        - boolean和其他的数据类型都不兼容</p>
+<p>​    问题1：char可不可以自动转换成byte –不可以</p>
+<h6 id="强制转换（显示转换）：大转小"><a href="#强制转换（显示转换）：大转小" class="headerlink" title="强制转换（显示转换）：大转小"></a>强制转换（显示转换）：大转小</h6><p>​        顺序和以上顺序正好相反，若从大的类型转换为小的类型，需强制转换（）来实现</p>
+<p>​    问题2：long类型的数字如果大于8位，转换为float后，后面的丢掉吗？</p>
+<p>​                  float在计算机中保存时都是以科学计数法保存的        </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">计算机表达<span class="number">10</span>的幂是一般是用E或e，即</span><br><span class="line"><span class="number">1.03</span>乘<span class="number">10</span>的<span class="number">9</span>次方，可简写为“<span class="number">1.03E+09</span>”的形式</span><br><span class="line">-<span class="number">1.03</span>乘<span class="number">10</span>的<span class="number">9</span>次方，可简写为“-<span class="number">1.03E+09</span>”的形式</span><br><span class="line"><span class="number">1.03</span>乘<span class="number">10</span>的-<span class="number">9</span>次方，可简写为“<span class="number">1.03E-09</span>”的形式</span><br><span class="line">-<span class="number">1.03</span>乘<span class="number">10</span>的-<span class="number">9</span>次方，可简写为“-<span class="number">1.03E-09</span>”的形式</span><br><span class="line"></span><br><span class="line"><span class="number">1.03e+09</span>相当于小数点向右?<span class="comment">//移动了9位 1.0310^(-9)</span></span><br><span class="line"><span class="number">1.03e-09</span>相当于小数点向左?<span class="comment">//移动了9位 1.03*10^(-9)</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="不同类型间运算问题"><a href="#不同类型间运算问题" class="headerlink" title="不同类型间运算问题"></a>不同类型间运算问题</h6><p>​        不同数据类型间进行运算，最后的结果的类型和运算中的最大数据类型保持一致</p>
+<p>​        byte,short,char类型在运算中都是先转换为int类型，再运算，即他们的运算结果一定都是int类型            </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">byte</span> b1=<span class="number">2</span>,b2=<span class="number">4</span>;</span><br><span class="line">b2 = b1+b2;  <span class="comment">//编译错误，可以通过强制转换解决</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">byte</span> b3 = <span class="number">1</span>+<span class="number">2</span>;  <span class="comment">//对的</span></span><br><span class="line">	若是整数直接量进行运算，编译器在编译期间会进行优化（将<span class="keyword">int</span>强制转换为<span class="keyword">byte</span>）</span><br><span class="line">总结：若是整数直接量，编译器在编译期间就可知道值，知道结果，编译器进行了优化，进行了强制转换</span><br><span class="line">  而如果时变量进行运算，编译器在编译期间无法得知变量中的值，只有到了运行期才能知道，所以在编译期间无法进行结果优化</span><br></pre></td></tr></table></figure>
+</blockquote>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-03-10</span><i class="fa fa-tag"></i><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2021/03/10/java基础知识查漏补缺一/,hlohlo-Blog,java基础知识查漏补缺一,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2021/03/02/%E9%A6%96%E9%A1%B5%E5%B1%95%E7%A4%BA%E5%AE%BF%E8%88%8D%E5%A4%A7%E9%99%A2%E5%8A%9F%E8%83%BD-%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%EF%BC%88%E4%B8%80%EF%BC%89/" title="首页展示宿舍大院功能--页面渲染（一）">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'Qi8LRKnWHaQBBfJAiaOtX0TM-gzGzoHsz',
+  app_key:'M7ephuhKjjXjS3MnqgHEEaPP',
+  placeholder:'念念不忘，必有回响...',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  enableQQ:true,
+  avatar:'monsterid'        
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":5,"vOffset":-38},"mobile":{"show":false,"scale":0.2},"react":{"opacityDefault":0.8,"opacityOnHover":0.2},"log":false});</script></body></html>
