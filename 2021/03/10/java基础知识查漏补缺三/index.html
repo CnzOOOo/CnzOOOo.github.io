@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="hlohlo"><title>java基础知识查漏补缺三 · hlohlo-Blog</title><meta name="description" content="循环结构
+循环三要素
+变量的初始化
+判断条件
+变量的改变（变量的迭代）
+
+三种循环
+while循环
+12345变量的初始化while(表达式-boolean)&amp;#123;    循环体    变量的改变;&amp;#125;
+
+do…while循环
+12345变量的初始化do&amp;#123;    循环体   "><meta name="keywords" content="hlohlo博客,HoloBlog,博客,HOLO"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">hlohlo-Blog</a></h3><div class="description"><p>所得皆所期，所失亦无碍。<br> The gains are expected, and the losses are okay</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/CnzOOOo"><i class="fa fa-github"></i></a></li><li><a href="mailto:CnzOOOo@163.com"><i class="fa fa-envelope"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY="><i class="fa fa-qq"></i></a></li><li><a target="_blank" rel="noopener" href="https://www.zhihu.com/people/cnzni-zi"><i class="fa fa-mortar-board"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2020 - 2021 </span><i class="fa fa-star"></i><span> hlohlo</span></div><div class="by_farbox"><span>Powered by </span><a href="https://www.hlohlo.xyz" target="_blank">Hexo </a><span> & </span><a href="https://www.hlohlo.xyz" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="https://www.hlohlo.xyz" target="_blank">hlohlo</a><span style="height:10px;margin-left: 10px;">|</span><img src="/images/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;">暂无备案</span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>java基础知识查漏补缺三</a></h3></div><div class="post-content"><h4 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h4><blockquote>
+<h6 id="循环三要素"><a href="#循环三要素" class="headerlink" title="循环三要素"></a>循环三要素</h6><ol>
+<li>变量的初始化</li>
+<li>判断条件</li>
+<li>变量的改变（变量的迭代）</li>
+</ol>
+<h6 id="三种循环"><a href="#三种循环" class="headerlink" title="三种循环"></a>三种循环</h6><ol>
+<li><p>while循环</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">变量的初始化</span><br><span class="line"><span class="keyword">while</span>(表达式-<span class="keyword">boolean</span>)&#123;</span><br><span class="line">    循环体</span><br><span class="line">    变量的改变;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>do…while循环</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">变量的初始化</span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">    变量的改变;</span><br><span class="line">&#125;<span class="keyword">while</span>(表达式-<span class="keyword">boolean</span>)</span><br></pre></td></tr></table></figure>
+
+<p>while和do…while循环的区别以及应用场景：</p>
+<p>​        while循环先判断后执行，do…while循环先执行后判断</p>
+<p>​        应用场景：根据当前业务去判断</p>
+<p>while循环和do…while循环一些情况下是可以相互转换的</p>
+</li>
+<li><p>for循环</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(变量的初始化;判断条件;变量的改变)&#123;</span><br><span class="line">	循环体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>for循环的4种特殊用法        </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1变量的初始化部分在for循环之外</span></span><br><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">	....</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//2变量的改变在for循环循环体中</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>)&#123;</span><br><span class="line">    ....</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//3在变量的初始化部分，和变量的迭代部分可以由多部分组成（多个变量）</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;i&lt;<span class="number">10</span>,i++,j++)&#123;....&#125;</span><br><span class="line">注意点：条件判断部分必须返回一个<span class="keyword">boolean</span>值，不可以写成多个部分用,连接</span><br><span class="line"><span class="comment">//4三部分都为空，----死循环</span></span><br><span class="line">    <span class="keyword">for</span>(;;)&#123;....&#125;</span><br></pre></td></tr></table></figure>
+
+<p>死循环：</p>
+<p>​        问题：在Java中是否得避免死循环的出现？</p>
+<p>​        答：视情况而定，因为在Java中有一些场景必须使用死循环才能达到想要的效果</p>
+<p>​                需死循环的场景：服务器端和客户端建立连接</p>
+<p>三种循环都可以实现死循环</p>
+<p>​        while(true){….}</p>
+<p>​        do{….}while(true)</p>
+<p>​        for(;;){….}</p>
+<h6 id="注意点-考点：for循环三部分的执行顺序？"><a href="#注意点-考点：for循环三部分的执行顺序？" class="headerlink" title="注意点/考点：for循环三部分的执行顺序？"></a>注意点/考点：for循环三部分的执行顺序？</h6><p>for(变量的初始化;条件判断;变量的改变){….}</p>
+<ol>
+<li><p>变量的初始化</p>
+</li>
+<li><p>条件的判断</p>
+</li>
+<li><p>满足判断条件—-执行循环体</p>
+</li>
+<li><p>执行变量的改变</p>
+<p>​        –true –执行循环体</p>
+<p>​        –false –结束循环</p>
+</li>
+</ol>
+<h6 id="break-continue的使用"><a href="#break-continue的使用" class="headerlink" title="break,continue的使用"></a>break,continue的使用</h6><ol>
+<li><p>break：跳出当前循环</p>
+</li>
+<li><p>continue：跳出本次循环，继续下次循环    </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(i==<span class="number">5</span>)&#123;</span><br><span class="line">        <span class="keyword">break</span>;<span class="comment">//跳出当前循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(i);</span><br><span class="line">&#125;<span class="comment">//输出结果:0,1,2,3,4</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(i==<span class="number">5</span>)&#123;</span><br><span class="line">        <span class="keyword">continue</span>;<span class="comment">//跳出本次循环，继续下次循环</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(i);</span><br><span class="line">&#125;<span class="comment">//输出结果：0,1,2,3,4,6,7,8,9</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>break关键字</p>
+<p>​        可以用在switch中，用于结束分支</p>
+<p>​        可以用在循环中，用于结束循环</p>
+<p>return关键字</p>
+<p>​        用于方法中，执行到这个关键字时，跳出方法</p>
+</li>
+</ol>
+<h6 id="循环嵌套：循环里边套着循环"><a href="#循环嵌套：循环里边套着循环" class="headerlink" title="循环嵌套：循环里边套着循环"></a>循环嵌套：循环里边套着循环</h6><p>常见的循环嵌套</p>
+<p>​        for循环里边套着for循环 –使用频率最高的 –应用非常多 –面试题中算法题 –分支，循环（嵌套）</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="基本数组-上"><a href="#基本数组-上" class="headerlink" title="基本数组-上"></a>基本数组-上</h4><h6 id="数组的定义：容器"><a href="#数组的定义：容器" class="headerlink" title="数组的定义：容器"></a>数组的定义：容器</h6><p>​        用于保存同一类型的数据，便于统一管理</p>
+<h6 id="数组的声明：2种"><a href="#数组的声明：2种" class="headerlink" title="数组的声明：2种"></a>数组的声明：2种</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1建议使用</span></span><br><span class="line"><span class="keyword">int</span>[] ary;</span><br><span class="line"><span class="comment">//2不建议使用 --在底层代码会出现</span></span><br><span class="line"><span class="keyword">int</span> ary[];</span><br></pre></td></tr></table></figure>
+
+<h6 id="数组的初始化：3种"><a href="#数组的初始化：3种" class="headerlink" title="数组的初始化：3种"></a>数组的初始化：3种</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ary = <span class="keyword">new</span> <span class="keyword">int</span>[length];</span><br><span class="line">	<span class="comment">//此种方式创建数组后，每个元素的值是什么：0;</span></span><br><span class="line">    	数组中的每个元素都有一个默认初始值，取决于数组中元素的类型</span><br><span class="line">    	<span class="keyword">int</span>[] ----<span class="number">0</span>; </span><br><span class="line">		<span class="keyword">double</span>[] ----<span class="number">0.0</span>; </span><br><span class="line">		<span class="keyword">boolean</span>[] ----<span class="keyword">false</span>; </span><br><span class="line">		String[] ----<span class="keyword">null</span>; </span><br><span class="line">		<span class="keyword">char</span>[] ----<span class="number">0</span> <span class="string">&#x27;\u0000&#x27;</span></span><br><span class="line"><span class="keyword">int</span>[] ary = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		必须在声明的同时进行初始化，不可以将声明和初始化分开</span><br><span class="line"><span class="keyword">int</span>[] ary = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>强调点：数组一旦创建，长度不可变，但是元素中的内容是可变的</p>
+<h6 id="数组的访问"><a href="#数组的访问" class="headerlink" title="数组的访问"></a>数组的访问</h6><ol>
+<li>如何访问数组中的元素</li>
+</ol>
+<p>​        元素的访问：2种</p>
+<p>​        -取值/赋值</p>
+<p>​        注意点：下标从0开始的，最大下标：length-1;在访问数组中的元素过程中，注意下标不要越界；如果越界，会抛出数组下标越界异常。—-<code>ArrayIndexOutOfBoundsException</code></p>
+<ol start="2">
+<li>如何遍历数组中的每个元素</li>
+</ol>
+<p>​        for循环遍历数组            </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;ary.length;i++)&#123;<span class="comment">//i表示数组的下标</span></span><br><span class="line">    ary[i]= ?;</span><br><span class="line">    <span class="keyword">int</span> a = ary[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-03-10</span><i class="fa fa-tag"></i><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2021/03/10/java基础知识查漏补缺三/,hlohlo-Blog,java基础知识查漏补缺三,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2021/03/10/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA%E4%BA%8C/" title="java基础知识查漏补缺二">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'Qi8LRKnWHaQBBfJAiaOtX0TM-gzGzoHsz',
+  app_key:'M7ephuhKjjXjS3MnqgHEEaPP',
+  placeholder:'念念不忘，必有回响...',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  enableQQ:true,
+  avatar:'monsterid'        
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":5,"vOffset":-38},"mobile":{"show":false,"scale":0.2},"react":{"opacityDefault":0.8,"opacityOnHover":0.2},"log":false});</script></body></html>
